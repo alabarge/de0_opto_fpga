@@ -2,12 +2,12 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Sep 18, 2023 4:24:55 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1695079495060</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>D:\de0_spec_fpga\nios\de0_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>Sep 18, 2023 4:59:32 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1695081572232</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>D:\de0_opto_fpga\nios\de0_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
-        <SopcDesignFile>..\..\de0_top\PR_RA\de0_fpga.sopcinfo</SopcDesignFile>
-        <SystemFileHash>3855cc2a10379c81569ace2ebc273b1e4be6ad257235be1cb7fcfabee877b98b</SystemFileHash>
+        <SopcDesignFile>..\..\de0_top\PR_RF\de0_fpga.sopcinfo</SopcDesignFile>
+        <SystemFileHash>bf952d4c71abf14a3117395bd29cdb10a3d54bd6bf337a4565ca33c8fee0ca37</SystemFileHash>
         <JdiFile>default</JdiFile>
         <Cpu>cpu</Cpu>
         <SchemaVersion>1.9</SchemaVersion>
@@ -1037,25 +1037,19 @@
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>adc</slaveDescriptor>
-                <addressRange>0x100A0000 - 0x100A7FFF</addressRange>
-                <addressSpan>32768</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>fifo</slaveDescriptor>
-                <addressRange>0x100B0000 - 0x100B1FFF</addressRange>
+                <addressRange>0x100A0000 - 0x100A1FFF</addressRange>
                 <addressSpan>8192</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>dac</slaveDescriptor>
-                <addressRange>0x100C0000 - 0x100C003F</addressRange>
-                <addressSpan>64</addressSpan>
+                <slaveDescriptor>opto</slaveDescriptor>
+                <addressRange>0x100B0000 - 0x100B3FFF</addressRange>
+                <addressSpan>16384</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>update</slaveDescriptor>
-                <addressRange>0x100D0000 - 0x100D007F</addressRange>
+                <addressRange>0x100C0000 - 0x100C007F</addressRange>
                 <addressSpan>128</addressSpan>
                 <attributes/>
         </MemoryMap>

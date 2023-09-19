@@ -2,9 +2,9 @@
  * linker.h - Linker script mapping information
  *
  * Machine generated for CPU 'cpu' in SOPC Builder design 'de0_fpga'
- * SOPC Builder design path: D:/de0_opto_fpga/de0_top/PR_RF/de0_fpga.sopcinfo
+ * SOPC Builder design path: ../../de0_top/PR_RF/de0_fpga.sopcinfo
  *
- * Generated: Mon Sep 04 09:52:52 PDT 2023
+ * Generated: Mon Sep 18 16:59:32 PDT 2023
  */
 
 /*

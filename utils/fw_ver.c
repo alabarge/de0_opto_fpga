@@ -198,12 +198,10 @@ int main(int argc, char *argv[]) {
          if (token == NULL) continue;
          if (strcmp(token, "LAST_QUARTUS_VERSION") == 0) {
             token = strtok(NULL, "\"");
-            printf("token : %s\n", token);
             strcpy(last_quartus, token);
          }
          if (strcmp(token, "PROJECT_CREATION_TIME_DATE") == 0) {
             token = strtok(NULL, "\"");
-            printf("token : %s\n", token);
             strcpy(creation_date, token);
             break;
          }

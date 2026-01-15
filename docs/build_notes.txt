@@ -5,14 +5,15 @@
       because of a driver conflict with the FTDI component.
 3.    If Qsys is changed then the BSP must be regenerated.
 4.    If the FPGA is rebuilt then the firmware must be rebuilt to avoid the "Mismatch Warning".
+5.    7-zip must be installed.
+6.    Ubuntu-20.04 wsl must be version 1
 
-Steps for building from clean repository
+Steps for building from clean repository, takes about 20 minutes
 
 1.    From Platform Designer open de0_qsys.qsys (from the PR_ variant directory)
 2.    Generate -> Generate HDL, Select VHDL for synthesis output and uncheck .BSF block symbol
 3.    Compile design from Processing -> Start Compilation
-4a.   Use the copy_sw.sh script from NIOS shell to copy the common files to the PR_xxx directory
-4b.   Open Eclipse from Tools -> Nios II Software Build Tools for Eclipse
+4.    Open Eclipse from Tools -> Nios II Software Build Tools for Eclipse
 5.    File -> Import -> Preferences from de0_fpga\utils\eclipse.epf
 6.    File -> Import -> Existing Projects into Workspace from de0_fpga\PR_XXX\software
 7.    Select both de0_bsp and de0_fw
@@ -21,7 +22,7 @@ Steps for building from clean repository
 10.   Select only de0_bsp and then OK
 11.   Then again from Project -> Clean select only de0_fw
 12.   Right click de0_fw Nios II -> Nios II Command Shell...
-13.   Change directory cd ../../script
+13.   Change directory cd ../../de0_top/PR_RF/script
 14.   Program SOF file from Tools -> Programmer, only necessary when flash is empty
 15.   Flash the SOF, ELF and ZIP files using ./flash_all.sh
 16.   Use the standard out USB serial port (not FTDI part, something like Prolific)

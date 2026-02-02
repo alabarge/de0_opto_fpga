@@ -3,3 +3,5 @@ rm -f zipfs.zip
 cd zipfs
 "C:\Program Files\7-Zip\7z.exe" a -tzip -mx0 ..\zipfs.zip
 cd ..
+c:\altera\25.1std\nios2eds\bin\bin2flash.exe --input="zipfs.zip" --output="zipfs.flash" --location=0x200000 --verbose
+riscv32-unknown-elf-objcopy --input-target srec --output-target ihex zipfs.flash zipfs.hex

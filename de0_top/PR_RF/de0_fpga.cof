@@ -7,6 +7,11 @@
 	<width>1</width>
 	<mode>7</mode>
 	<hex_block>
+		<hex_filename>../../nios/de0_fw/zipfs.hex</hex_filename>
+		<hex_addressing>absolute</hex_addressing>
+		<hex_little_endian>0</hex_little_endian>
+	</hex_block>
+	<hex_block>
 		<hex_filename>../../nios/de0_fw/build/Default/de0_fw.hex</hex_filename>
 		<hex_addressing>absolute</hex_addressing>
 		<hex_little_endian>0</hex_little_endian>

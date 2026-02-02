@@ -112,9 +112,6 @@
    static   char     cur_home[] = {0x1B, '[', 'H', 0x00};
 
 
-   static   volatile pstamp_regs_t   regs = (volatile pstamp_regs_t)STAMP_BASE;
-
-
 // 7 MODULE CODE
 
 // ===========================================================================
@@ -199,15 +196,6 @@ int main() {
 
       // Report R/O Zip File System
       xlprint("\n%-13s base:offset %08X:%08X\n", ALTERA_RO_ZIPFS_NAME, ALTERA_RO_ZIPFS_BASE, ALTERA_RO_ZIPFS_OFFSET);
-
-      // Report R/O Zip File System Directory
-      strcat(firstFile, "/");
-//      alt_ro_zipfs_dir(firstFile);
-
-      // Partial R/O Zip File System Dump
-      xlprint("%-13s partial content ...\n\n", ALTERA_RO_ZIPFS_NAME);
-//      alt_epcs_flash_read(gc.fd, ALTERA_RO_ZIPFS_OFFSET, gc.buf, 256);
-//      dump(gc.buf, 64, LIB_OFFSET | LIB_ASCII, ALTERA_RO_ZIPFS_OFFSET);
 
       // Open Stimulus File and Dump
       gc.fp = fopen("/mnt/rozipfs/Cello.wav", "rb");
@@ -297,7 +285,7 @@ int main() {
    dump((uint8_t *)SDRAM_FIFO_REGION_BASE, 64, LIB_ADDR | LIB_ASCII, 0);
 
    // Partial EPCS Boot Dump
-   xlprint("\nepcs boot partial ...\n\n");
+   xlprint("\nepcq boot partial ...\n\n");
    dump((uint8_t *)EPCQ_AVL_MEM_BASE, 1024, LIB_ADDR | LIB_ASCII, 0);
 
    // Power-On Self Test

@@ -61,6 +61,8 @@
          7.7   stamp_count()
          7.8   stamp_magic();
          7.9   stamp_inc();
+         7.10  stamp_wd_clear();
+         7.11  stamp_wd_enable();
 
 -----------------------------------------------------------------------------*/
 
@@ -300,6 +302,9 @@ uint32_t stamp_count(void) {
 
 // 7.7.5   Code
 
+   // take snapshot of counter
+   regs->count = 0;
+
    return regs->count;
 
 } // end stamp_count()
@@ -365,4 +370,69 @@ uint32_t stamp_inc(void) {
 } // end stamp_inc()
 
 
+// ===========================================================================
 
+// 7.10
+
+void stamp_wd_clear(void) {
+
+/* 7.10.1   Functional Description
+
+   This routine will clear the watchdog timer to prevent timeout and reset.
+
+   7.10.2   Parameters:
+
+   NONE
+
+   7.10.3   Return Values:
+
+   NONE
+
+-----------------------------------------------------------------------------
+*/
+
+// 7.10.4   Data Structures
+
+// 7.10.5   Code
+
+   regs->wd_clear = 0;
+
+} // end stamp_wd_clear()
+
+
+// ===========================================================================
+
+// 7.11
+
+void stamp_wd_enable(void) {
+
+/* 7.11.1   Functional Description
+
+   This routine will enable the watchdog timer, must be cleared at once per
+   every two seconds.
+
+   7.11.2   Parameters:
+
+   NONE
+
+   7.11.3   Return Values:
+
+   NONE
+
+-----------------------------------------------------------------------------
+*/
+
+// 7.11.4   Data Structures
+
+   stamp_ctl_reg_t ctl;
+
+// 7.11.5   Code
+
+   ctl.i = regs->ctl;
+
+   // enable the watchdog timer
+   ctl.b.enable = 1;
+
+   regs->ctl = ctl.i;
+
+} // end stamp_wd_enable()

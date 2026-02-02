@@ -378,7 +378,7 @@ uint32_t cp_msg(pcm_msg_t msg) {
          rsp->p.flags  = msg->p.flags;
          rsp->p.status = CP_OK;
          // reset ping timeout
-         gc.ping_time = alt_timestamp();
+         gc.ping_time = stamp_count();
          gc.ping_cnt  = 0;
          // Only respond if
          if (gc.status & CFG_STATUS_CONNECTED)
@@ -483,7 +483,7 @@ uint32_t cp_tick(void) {
 // 7.4.4   Data Structures
 
    uint32_t    result = CP_OK;
-   uint32_t    now = alt_timestamp();
+   uint32_t    now = stamp_count();
 
 // 7.4.5   Code
 

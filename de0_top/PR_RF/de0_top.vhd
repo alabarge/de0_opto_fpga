@@ -23,12 +23,6 @@ entity de0_top is
       oDRAM_RASn           : out   std_logic;
       oDRAM_WEn            : out   std_logic;
 
-      -- EPCS Interface
-      oEPCS_DCLK           : out   std_logic;
-      oEPCS_NCS0           : out   std_logic;
-      oEPCS_ASD0           : out   std_logic;
-      iEPCS_DATA0          : in    std_logic;
-
       -- Fast Serial FTDI
       oFSCLK               : out   std_logic;
       iFSCTS               : in    std_logic;
@@ -69,13 +63,9 @@ component de0_fpga is
       clk_clk        : in    std_logic;
       reset_reset_n  : in    std_logic;
       locked_export  : out   std_logic;
-      watchdog_reset : out   std_logic;
+      stamp_wd_reset : out   std_logic;
       stdout_rxd     : in    std_logic;
       stdout_txd     : out   std_logic;
-      epcs_dclk      : out   std_logic;
-      epcs_sce       : out   std_logic;
-      epcs_sdo       : out   std_logic;
-      epcs_data0     : in    std_logic;
       opto_head_addr : in    std_logic_vector(15 downto 0);
       opto_tail_addr : out   std_logic_vector(15 downto 0);
       opto_fsclk     : out   std_logic;
@@ -154,7 +144,7 @@ signal debug               : std_logic_vector(3 downto 0);
          clk_clk           => iCLK_50M,
          reset_reset_n     => sys_rst_n,
          locked_export     => pll_locked,
-         watchdog_reset    => watchdog,
+         stamp_wd_reset    => watchdog,
          gpx_export        => ioGPX,
          gpi_export        => iGPX,
          stdout_rxd        => iSTDOUT_UART_RX,
@@ -169,10 +159,6 @@ signal debug               : std_logic_vector(3 downto 0);
          sdram_dqm         => oDRAM_DQM,
          sdram_ras_n       => oDRAM_RASn,
          sdram_we_n        => oDRAM_WEn,
-         epcs_dclk         => oEPCS_DCLK,
-         epcs_sce          => oEPCS_NCS0,
-         epcs_sdo          => oEPCS_ASD0,
-         epcs_data0        => iEPCS_DATA0,
          opto_head_addr    => head_addr,
          opto_tail_addr    => tail_addr,
          opto_fsclk        => oFSCLK,

@@ -2,7 +2,7 @@ set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE22F17C6
 set_global_assignment -name TOP_LEVEL_ENTITY de0_top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13
-set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.2 Standard Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "25.1std.0 Standard Edition"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "MON MAY  5 11:54:18 2014"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name POST_FLOW_SCRIPT_FILE "quartus_sh:script/post_build.tcl"
@@ -30,10 +30,10 @@ set_location_assignment PIN_F3 -to ioGPX[1]
 set_location_assignment PIN_B1 -to ioGPX[2]
 set_location_assignment PIN_L3 -to ioGPX[3]
 
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oLED[*]
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ioGPX[*]
-set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to oLED*
-set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to ioGPX*
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oLED
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ioGPX
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to oLED
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to ioGPX
 
 #============================================================
 # LEDS, TVCA
@@ -71,7 +71,7 @@ set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to ioGPX*
 set_location_assignment PIN_J15 -to iGPX[0]
 set_location_assignment PIN_E1 -to iGPX[1]
 
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to iGPX[*]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to iGPX
 
 #============================================================
 # DIPSW[3:0]
@@ -125,12 +125,16 @@ set_location_assignment PIN_A10 -to oADC_CSn
 set_location_assignment PIN_B10 -to oADC_DIN
 set_location_assignment PIN_B14 -to oADC_SCLK
 set_location_assignment PIN_A9 -to iADC_DOUT
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oADC*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to iADC*
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oADC_CSn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oADC_DIN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oADC_SCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to iADC_DOUT
 set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to oADC_SCLK
 set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to oADC_CSn
 set_instance_assignment -name FAST_OUTPUT_REGISTER ON -to oADC_DIN
-set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oADC*
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oADC_CSn
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oADC_DIN
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oADC_SCLK
 
 #============================================================
 # ADC MAX11300, PIXI (NOTE: PULL-UP INTBn WITH 4.7K)
@@ -172,8 +176,14 @@ set_location_assignment PIN_C16 -to oTP2
 set_location_assignment PIN_D16 -to oTP3
 set_location_assignment PIN_D14 -to oTP4
 
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oTP*
-set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oTP*
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oTP1
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oTP1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oTP2
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oTP2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oTP3
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oTP3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oTP4
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oTP4
 
 #============================================================
 # STDOUT UART, PROLIFIC OR FTDI, DE0-NANO
@@ -313,9 +323,12 @@ set_location_assignment PIN_E10 -to oFSCLK
 set_location_assignment PIN_B11 -to iFSDO
 set_location_assignment PIN_D11 -to iFSCTS
 
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to iFS*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oFS*
-set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to oFS*
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oFSDI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oFSCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to iFSDO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to iFSCTS
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to oFSDI
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to oFSCLK
 
 #============================================================
 # FAST SERIAL FTDI, C232HD DDHSP-0 (FAST SERIAL INTERFACE CONFIG), TVCA
@@ -510,22 +523,59 @@ set_location_assignment PIN_N2 -to oDRAM_ADDR[10]
 set_location_assignment PIN_N1 -to oDRAM_ADDR[11]
 set_location_assignment PIN_L4 -to oDRAM_ADDR[12]
 
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oDRAM*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ioDRAM*
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to oDRAM*
-set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ioDRAM*
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oDRAM_BA
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oDRAM_DQM
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oDRAM_RASn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oDRAM_CASn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oDRAM_CKE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oDRAM_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oDRAM_WEn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oDRAM_CSn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ioDRAM_DQ
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oDRAM_ADDR
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to oDRAM_BA
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to oDRAM_DQM
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to oDRAM_RASn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to oDRAM_CASn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to oDRAM_CKE
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to oDRAM_CLK
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to oDRAM_WEn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to oDRAM_CSn
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to ioDRAM_DQ
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to oDRAM_ADDR
 
 #============================================================
 # EPCS
 #============================================================
-set_location_assignment PIN_H2 -to iEPCS_DATA0
-set_location_assignment PIN_H1 -to oEPCS_DCLK
-set_location_assignment PIN_D2 -to oEPCS_NCS0
-set_location_assignment PIN_C1 -to oEPCS_ASD0
+#set_location_assignment PIN_H2 -to iEPCS_DATA0
+#set_location_assignment PIN_H1 -to oEPCS_DCLK
+#set_location_assignment PIN_D2 -to oEPCS_NCS0
+#set_location_assignment PIN_C1 -to oEPCS_ASD0
 
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oEPCS*
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to iEPCS*
-set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oEPCS*
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to "de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_DCLK"
+
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to "de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_SCE"
+
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to "de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_SDO"
+
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to "de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_DCLK"
+
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to "de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_SDO"
+
+set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to "de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_SCE"
+
+#set_location_assignment PIN_J5 -to altera_reserved_tms
+#set_location_assignment PIN_H3 -to altera_reserved_tck
+#set_location_assignment PIN_H4 -to altera_reserved_tdi
+#set_location_assignment PIN_J4 -to altera_reserved_tdo
+
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to iEPCS_DATA0
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oEPCS_DCLK
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oEPCS_NCS0
+#set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to oEPCS_ASD0
+#set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oEPCS_DCLK
+#set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oEPCS_NCS0
+#set_instance_assignment -name CURRENT_STRENGTH_NEW DEFAULT -to oEPCS_ASD0
 
 #============================================================
 # 2x13 GPIO Header
@@ -760,4 +810,7 @@ set_global_assignment -name QIP_FILE de0_fpga/synthesis/de0_fpga.qip
 set_global_assignment -name SOURCE_FILE de0_fpga.qsf
 set_global_assignment -name SDC_FILE de0_fpga.sdc
 set_global_assignment -name VHDL_FILE de0_top.vhd
+set_global_assignment -name PROJECT_IP_REGENERATION_POLICY SKIP_REGENERATING_IP_IF_HDL_MODIFIED
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

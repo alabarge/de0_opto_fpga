@@ -1,0 +1,10 @@
+The issue is that qmegawiz command returns with status 1 which means "Cancel", so the tcl interprets the result as the user had clicked "Cancel" instead of "Finish". As a dirty hack I changed the following line
+
+if { $status != 0 } {
+to
+
+if { $status != 0 && $status != 1} {
+in ~/intelfpga_lite/20.1/ip/altera/sopc_builder_ip/altera_avalon_mega_common/sopc_mwizc.tcl
+
+and it works. The "Cancel" button doesn't work after this of course but it's a far smaller issue.
+

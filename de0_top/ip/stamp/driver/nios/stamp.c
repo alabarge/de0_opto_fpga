@@ -58,6 +58,11 @@
          7.4   stamp_date()
          7.5   stamp_time()
          7.6   stamp_version()
+         7.7   stamp_count()
+         7.8   stamp_magic();
+         7.9   stamp_inc();
+         7.10  stamp_wd_clear();
+         7.11  stamp_wd_enable();
 
 -----------------------------------------------------------------------------*/
 
@@ -147,7 +152,7 @@ uint32_t stamp_sysid(void) {
 
 // 7.2.5   Code
 
-   return regs->sysid;
+   return regs->pid;
 
 } // end stamp_sysid()
 
@@ -270,3 +275,164 @@ uint32_t stamp_version(void) {
    return regs->version;
 
 } // end stamp_version()
+
+
+// ===========================================================================
+
+// 7.7
+
+uint32_t stamp_count(void) {
+
+/* 7.7.1   Functional Description
+
+   This routine will return the count register value.
+
+   7.7.2   Parameters:
+
+   NONE
+
+   7.7.3   Return Values:
+
+   return   count register
+
+-----------------------------------------------------------------------------
+*/
+
+// 7.7.4   Data Structures
+
+// 7.7.5   Code
+
+   // take snapshot of counter
+   regs->count = 0;
+
+   return regs->count;
+
+} // end stamp_count()
+
+
+// ===========================================================================
+
+// 7.8
+
+uint32_t stamp_magic(void) {
+
+/* 7.8.1   Functional Description
+
+   This routine will return the magic number register value.
+
+   7.8.2   Parameters:
+
+   NONE
+
+   7.8.3   Return Values:
+
+   return   magic# register
+
+-----------------------------------------------------------------------------
+*/
+
+// 7.8.4   Data Structures
+
+// 7.8.5   Code
+
+   return regs->magic;
+
+} // end stamp_magic()
+
+
+// ===========================================================================
+
+// 7.9
+
+uint32_t stamp_inc(void) {
+
+/* 7.9.1   Functional Description
+
+   This routine will return the build increment register value.
+
+   7.9.2   Parameters:
+
+   NONE
+
+   7.9.3   Return Values:
+
+   return   build increment register
+
+-----------------------------------------------------------------------------
+*/
+
+// 7.9.4   Data Structures
+
+// 7.9.5   Code
+
+   return regs->inc;
+
+} // end stamp_inc()
+
+
+// ===========================================================================
+
+// 7.10
+
+void stamp_wd_clear(void) {
+
+/* 7.10.1   Functional Description
+
+   This routine will clear the watchdog timer to prevent timeout and reset.
+
+   7.10.2   Parameters:
+
+   NONE
+
+   7.10.3   Return Values:
+
+   NONE
+
+-----------------------------------------------------------------------------
+*/
+
+// 7.10.4   Data Structures
+
+// 7.10.5   Code
+
+   regs->wd_clear = 0;
+
+} // end stamp_wd_clear()
+
+
+// ===========================================================================
+
+// 7.11
+
+void stamp_wd_enable(void) {
+
+/* 7.11.1   Functional Description
+
+   This routine will enable the watchdog timer, must be cleared at once per
+   every two seconds.
+
+   7.11.2   Parameters:
+
+   NONE
+
+   7.11.3   Return Values:
+
+   NONE
+
+-----------------------------------------------------------------------------
+*/
+
+// 7.11.4   Data Structures
+
+   stamp_ctl_reg_t ctl;
+
+// 7.11.5   Code
+
+   ctl.i = regs->ctl;
+
+   // enable the watchdog timer
+   ctl.b.enable = 1;
+
+   regs->ctl = ctl.i;
+
+} // end stamp_wd_enable()

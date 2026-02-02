@@ -8,30 +8,30 @@ derive_clock_uncertainty
 #**************************************************************
 # Set Input Delay
 #**************************************************************
-set_min_delay 0.0 -from [get_ports {iFSCTS iFSDO  iEPCS_DATA0 }] -to *
-set_max_delay 10.0 -from [get_ports {iFSCTS iFSDO  iEPCS_DATA0 }] -to *
+set_min_delay 0.0 -from [get_ports {iFSCTS iFSDO de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_DATA0 }] -to *
+set_max_delay 10.0 -from [get_ports {iFSCTS iFSDO de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_DATA0 }] -to *
 set_min_delay 0.0 -from [get_ports {ioDRAM_DQ[*] iADC_DOUT }] -to *
 set_max_delay 10.0 -from [get_ports {ioDRAM_DQ[*] iADC_DOUT }] -to *
 
 #**************************************************************
 # Set Output Delay
 #**************************************************************
-set_min_delay  0.0 -from * -to [get_ports { oEPCS* oFSCLK oFSDI }]
-set_max_delay  10.0 -from * -to [get_ports { oEPCS* oFSCLK oFSDI }]
+set_min_delay  0.0 -from * -to [get_ports { oFSCLK oFSDI}]
+set_max_delay  10.0 -from * -to [get_ports { oFSCLK oFSDI}]
 set_min_delay  0.0 -from * -to [get_ports {oDRAM_ADDR[*] oDRAM_BA[*] oDRAM_CASn oDRAM_RASn oDRAM_CLK oDRAM_CSn}]
 set_max_delay  10.0 -from * -to [get_ports {oDRAM_ADDR[*] oDRAM_BA[*] oDRAM_CASn oDRAM_RASn oDRAM_CLK oDRAM_CSn }]
-set_min_delay  0.0 -from * -to [get_ports {ioDRAM_DQ[*] oDRAM_DQM[*] oDRAM_RASn oDRAM_WEn}]
+set_min_delay  0.0 -from * -to [get_ports {ioDRAM_DQ[*] oDRAM_DQM[*] oDRAM_RASn oDRAM_WEn }]
 set_max_delay  10.0 -from * -to [get_ports {ioDRAM_DQ[*] oDRAM_DQM[*] oDRAM_RASn oDRAM_WEn }]
-set_min_delay  0.0 -from * -to [get_ports {oADC_CSn oADC_DIN oADC_SCLK }]
-set_max_delay  10.0 -from * -to [get_ports {oADC_CSn oADC_DIN oADC_SCLK }]
+set_min_delay  0.0 -from * -to [get_ports {oADC_CSn oADC_DIN oADC_SCLK de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_DCLK de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_SCE de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_SDO}]
+set_max_delay  10.0 -from * -to [get_ports {oADC_CSn oADC_DIN oADC_SCLK de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_DCLK de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_SCE de0_fpga:u0|de0_fpga_epcq:epcq|de0_fpga_epcq_asmi_parallel_instance_name:asmi_parallel_inst|de0_fpga_epcq_asmi_parallel_instance_name_asmi_parallel_instance_name:asmi_parallel_instance_name|sd3~ALTERA_SDO}]
 
 
 #**************************************************************
 # Set False Path Outputs
 #**************************************************************
 
-set_false_path -from [get_clocks iCLK_50M] -to [get_clocks altera_reserved_tck]
-set_false_path -from [get_clocks altera_reserved_tck] -to [get_clocks iCLK_50M]
+#set_false_path -from [get_clocks iCLK_50M] -to [get_clocks altera_reserved_tck]
+#set_false_path -from [get_clocks altera_reserved_tck] -to [get_clocks iCLK_50M]
 set_false_path -from * -to [get_ports {oTP* oSTDOUT_UART_TX}]
 set_false_path -from * -to [get_ports {oLED*}]
 set_false_path -from * -to [get_ports {ioGPX*}]
@@ -51,3 +51,4 @@ set_clock_groups -asynchronous -group {altera_reserved_tck}
 set_input_delay -clock {altera_reserved_tck} 20 [get_ports altera_reserved_tdi]
 set_input_delay -clock {altera_reserved_tck} 20 [get_ports altera_reserved_tms]
 set_output_delay -clock {altera_reserved_tck} 20 [get_ports altera_reserved_tdo]
+

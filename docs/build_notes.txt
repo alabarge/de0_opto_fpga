@@ -3407,3 +3407,635 @@ error   :  00000100
 39.   F5 to run the application
 40.   This application can also be run from the command line
 
+
+
+VS2022 jack.sln Rebuild Solution Debug Log:
+
+####
+
+Rebuild started at 1:00 PM...
+1>------ Rebuild All started: Project: libserialport, Configuration: Debug x64 ------
+2>------ Rebuild All started: Project: cmapi, Configuration: Debug x64 ------
+2>Build Version
+1>serialport.c
+2>
+2>Version Utility 1.8 [AEL]
+2>Build String:  1.0.2 build 2, 13:00 02.FEB.26 [aaron]
+2>
+2>stdafx.cpp
+1>timing.c
+2>dllmain.cpp
+1>windows.c
+2>cmapi.cpp
+1>Generating Code...
+1>   Creating library Debug\libserialport.lib and object Debug\libserialport.exp
+1>libserialport.vcxproj -> D:\de0_opto_fpga\win\jack\libserialport\Debug\libserialport.dll
+1>Copy DLLs and LIBs
+1>D:\de0_opto_fpga\win\jack\libserialport\Debug\libserialport.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\libserialport.dll
+1>1 File(s) copied
+1>D:\de0_opto_fpga\win\jack\libserialport\Debug\libserialport.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\libserialport.lib
+1>1 File(s) copied
+1>D:\de0_opto_fpga\win\jack\libserialport\Debug\libserialport.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\libserialport.exp
+1>1 File(s) copied
+1>D:\de0_opto_fpga\win\jack\libserialport\Debug\libserialport.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\libserialport.pdb
+1>1 File(s) copied
+1>D:\de0_opto_fpga\win\jack\libserialport\libserialport.h -> D:\de0_opto_fpga\win\jack\inc\libserialport.h
+1>1 File(s) copied
+2>trace.cpp
+2>Generating Code...
+2>   Creating library Debug\cmapi.lib and object Debug\cmapi.exp
+2>cmapi.vcxproj -> D:\de0_opto_fpga\win\jack\cmapi\Debug\cmapi.dll
+2>Copy DLLs and LIBs
+2>D:\de0_opto_fpga\win\jack\cmapi\Debug\cmapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\cmapi.dll
+2>1 File(s) copied
+2>D:\de0_opto_fpga\win\jack\cmapi\Debug\cmapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\cmapi.lib
+2>1 File(s) copied
+2>D:\de0_opto_fpga\win\jack\cmapi\Debug\cmapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\cmapi.exp
+2>1 File(s) copied
+2>D:\de0_opto_fpga\win\jack\cmapi\Debug\cmapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\cmapi.pdb
+2>1 File(s) copied
+2>D:\de0_opto_fpga\win\jack\cmapi\cmapi.h -> D:\de0_opto_fpga\win\jack\inc\cmapi.h
+2>1 File(s) copied
+2>D:\de0_opto_fpga\win\jack\cmapi\msg_str.h -> D:\de0_opto_fpga\win\jack\inc\msg_str.h
+2>1 File(s) copied
+3>------ Rebuild All started: Project: libspapi, Configuration: Debug x64 ------
+4>------ Rebuild All started: Project: uartapi, Configuration: Debug x64 ------
+5>------ Rebuild All started: Project: udpapi, Configuration: Debug x64 ------
+6>------ Rebuild All started: Project: optoapi, Configuration: Debug x64 ------
+7>------ Rebuild All started: Project: fifoapi, Configuration: Debug x64 ------
+8>------ Rebuild All started: Project: lanapi, Configuration: Debug x64 ------
+9>------ Rebuild All started: Project: comapi, Configuration: Debug x64 ------
+4>Build Version
+4>
+4>Version Utility 1.8 [AEL]
+4>Build String:  1.0.3 build 2, 13:00 02.FEB.26 [aaron]
+4>
+4>stdafx.cpp
+3>Build Version
+3>
+3>Version Utility 1.8 [AEL]
+3>Build String:  1.0.3 build 2, 13:00 02.FEB.26 [aaron]
+3>
+3>stdafx.cpp
+5>Build Version
+5>
+5>Version Utility 1.8 [AEL]
+5>Build String:  1.0.3 build 2, 13:00 02.FEB.26 [aaron]
+5>
+5>stdafx.cpp
+6>Build Version
+6>
+6>Version Utility 1.8 [AEL]
+6>Build String:  1.0.3 build 2, 13:00 02.FEB.26 [aaron]
+6>
+6>stdafx.cpp
+8>Build Version
+8>
+8>Version Utility 1.8 [AEL]
+8>Build String:  1.0.3 build 2, 13:00 02.FEB.26 [aaron]
+8>
+9>Build Version
+8>stdafx.cpp
+9>
+9>Version Utility 1.8 [AEL]
+9>Build String:  1.0.3 build 2, 13:00 02.FEB.26 [aaron]
+9>
+9>stdafx.cpp
+7>Build Version
+4>dllmain.cpp
+7>
+7>Version Utility 1.8 [AEL]
+7>Build String:  1.0.3 build 2, 13:00 02.FEB.26 [aaron]
+7>
+5>dllmain.cpp
+6>dllmain.cpp
+7>stdafx.cpp
+8>dllmain.cpp
+5>udp.cpp
+4>uart.cpp
+6>opto.cpp
+8>lan.cpp
+7>dllmain.cpp
+3>dllmain.cpp
+9>dllmain.cpp
+4>trace.cpp
+7>fifo.cpp
+5>trace.cpp
+4>Generating Code...
+6>trace.cpp
+6>Generating Code...
+5>Generating Code...
+4>   Creating library Debug\uartapi.lib and object Debug\uartapi.exp
+8>trace.cpp
+5>   Creating library Debug\udpapi.lib and object Debug\udpapi.exp
+6>   Creating library Debug\optoapi.lib and object Debug\optoapi.exp
+4>uartapi.vcxproj -> D:\de0_opto_fpga\win\jack\uartapi\Debug\uartapi.dll
+4>Copy DLLs and LIBs
+8>Generating Code...
+5>udpapi.vcxproj -> D:\de0_opto_fpga\win\jack\udpapi\Debug\udpapi.dll
+5>Copy DLLs and LIBs
+6>optoapi.vcxproj -> D:\de0_opto_fpga\win\jack\optoapi\Debug\optoapi.dll
+4>D:\de0_opto_fpga\win\jack\uartapi\Debug\uartapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\uartapi.dll
+4>1 File(s) copied
+4>D:\de0_opto_fpga\win\jack\uartapi\Debug\uartapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\uartapi.lib
+4>1 File(s) copied
+4>D:\de0_opto_fpga\win\jack\uartapi\Debug\uartapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\uartapi.exp
+4>1 File(s) copied
+4>D:\de0_opto_fpga\win\jack\uartapi\Debug\uartapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\uartapi.pdb
+4>1 File(s) copied
+4>D:\de0_opto_fpga\win\jack\uartapi\uartapi.h -> D:\de0_opto_fpga\win\jack\inc\uartapi.h
+4>1 File(s) copied
+4>D:\de0_opto_fpga\win\jack\uartapi\x64\ftd2xx64.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\ftd2xx64.dll
+4>1 File(s) copied
+6>Copy DLLs and LIBs
+6>D:\de0_opto_fpga\win\jack\optoapi\Debug\optoapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\optoapi.dll
+6>1 File(s) copied
+6>D:\de0_opto_fpga\win\jack\optoapi\Debug\optoapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\optoapi.lib
+6>1 File(s) copied
+6>D:\de0_opto_fpga\win\jack\optoapi\Debug\optoapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\optoapi.exp
+6>1 File(s) copied
+6>D:\de0_opto_fpga\win\jack\optoapi\Debug\optoapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\optoapi.pdb
+5>D:\de0_opto_fpga\win\jack\udpapi\Debug\udpapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\udpapi.dll
+5>1 File(s) copied
+5>D:\de0_opto_fpga\win\jack\udpapi\Debug\udpapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\udpapi.lib
+5>1 File(s) copied
+5>D:\de0_opto_fpga\win\jack\udpapi\Debug\udpapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\udpapi.exp
+5>1 File(s) copied
+5>D:\de0_opto_fpga\win\jack\udpapi\Debug\udpapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\udpapi.pdb
+5>1 File(s) copied
+5>D:\de0_opto_fpga\win\jack\udpapi\udpapi.h -> D:\de0_opto_fpga\win\jack\inc\udpapi.h
+5>1 File(s) copied
+8>   Creating library Debug\lanapi.lib and object Debug\lanapi.exp
+7>trace.cpp
+6>1 File(s) copied
+6>D:\de0_opto_fpga\win\jack\optoapi\optoapi.h -> D:\de0_opto_fpga\win\jack\inc\optoapi.h
+6>1 File(s) copied
+6>D:\de0_opto_fpga\win\jack\optoapi\x64\ftd2xx64.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\ftd2xx64.dll
+6>1 File(s) copied
+8>lanapi.vcxproj -> D:\de0_opto_fpga\win\jack\lanapi\Debug\lanapi.dll
+7>Generating Code...
+3>libsp.cpp
+8>Copy DLLs and LIBs
+8>D:\de0_opto_fpga\win\jack\lanapi\Debug\lanapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\lanapi.dll
+8>1 File(s) copied
+8>D:\de0_opto_fpga\win\jack\lanapi\Debug\lanapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\lanapi.lib
+8>1 File(s) copied
+8>D:\de0_opto_fpga\win\jack\lanapi\Debug\lanapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\lanapi.exp
+8>1 File(s) copied
+7>   Creating library Debug\fifoapi.lib and object Debug\fifoapi.exp
+3>trace.cpp
+3>Generating Code...
+8>D:\de0_opto_fpga\win\jack\lanapi\Debug\lanapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\lanapi.pdb
+8>1 File(s) copied
+8>D:\de0_opto_fpga\win\jack\lanapi\lanapi.h -> D:\de0_opto_fpga\win\jack\inc\lanapi.h
+8>1 File(s) copied
+8>D:\de0_opto_fpga\win\jack\lanapi\x64\wpcap.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\wpcap.dll
+8>1 File(s) copied
+9>com.cpp
+7>fifoapi.vcxproj -> D:\de0_opto_fpga\win\jack\fifoapi\Debug\fifoapi.dll
+3>   Creating library Debug\libspapi.lib and object Debug\libspapi.exp
+9>trace.cpp
+9>Generating Code...
+7>Copy DLLs and LIBs
+7>D:\de0_opto_fpga\win\jack\fifoapi\Debug\fifoapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\fifoapi.dll
+7>1 File(s) copied
+7>D:\de0_opto_fpga\win\jack\fifoapi\Debug\fifoapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\fifoapi.lib
+7>1 File(s) copied
+7>D:\de0_opto_fpga\win\jack\fifoapi\Debug\fifoapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\fifoapi.exp
+7>1 File(s) copied
+7>D:\de0_opto_fpga\win\jack\fifoapi\Debug\fifoapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\fifoapi.pdb
+7>1 File(s) copied
+7>D:\de0_opto_fpga\win\jack\fifoapi\fifoapi.h -> D:\de0_opto_fpga\win\jack\inc\fifoapi.h
+7>1 File(s) copied
+3>libspapi.vcxproj -> D:\de0_opto_fpga\win\jack\libspapi\Debug\libspapi.dll
+3>Copy DLLs and LIBs
+9>   Creating library Debug\comapi.lib and object Debug\comapi.exp
+7>D:\de0_opto_fpga\win\jack\fifoapi\x64\ftd2xx64.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\ftd2xx64.dll
+7>1 File(s) copied
+3>D:\de0_opto_fpga\win\jack\libspapi\Debug\libspapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\libspapi.dll
+3>1 File(s) copied
+3>D:\de0_opto_fpga\win\jack\libspapi\Debug\libspapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\libspapi.lib
+3>1 File(s) copied
+3>D:\de0_opto_fpga\win\jack\libspapi\Debug\libspapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\libspapi.exp
+3>1 File(s) copied
+3>D:\de0_opto_fpga\win\jack\libspapi\Debug\libspapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\libspapi.pdb
+3>1 File(s) copied
+3>D:\de0_opto_fpga\win\jack\libspapi\libspapi.h -> D:\de0_opto_fpga\win\jack\inc\libspapi.h
+3>1 File(s) copied
+9>comapi.vcxproj -> D:\de0_opto_fpga\win\jack\comapi\Debug\comapi.dll
+9>Copy DLLs and LIBs
+9>D:\de0_opto_fpga\win\jack\comapi\Debug\comapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Debug\comapi.dll
+9>1 File(s) copied
+9>D:\de0_opto_fpga\win\jack\comapi\Debug\comapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\comapi.lib
+9>1 File(s) copied
+9>D:\de0_opto_fpga\win\jack\comapi\Debug\comapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\comapi.exp
+9>1 File(s) copied
+9>D:\de0_opto_fpga\win\jack\comapi\Debug\comapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Debug\comapi.pdb
+9>1 File(s) copied
+9>D:\de0_opto_fpga\win\jack\comapi\comapi.h -> D:\de0_opto_fpga\win\jack\inc\comapi.h
+9>1 File(s) copied
+10>------ Rebuild All started: Project: app, Configuration: Debug x64 ------
+10>Build Version
+10>
+10>Firmware Version Utility 1.12
+10>cmd : D:\de0_opto_fpga\win\jack\..\..\utils\fw_ver.exe D:\de0_opto_fpga\win\jack\app\build.inc D:\de0_opto_fpga\win\jack\app\build.h D:\de0_opto_fpga\win\jack\..\..\.git D:\de0_opto_fpga\win\jack\..\..\de0_top\PR_RF\de0_fpga.qsf
+10>cwd : D:\de0_opto_fpga\win\jack\app
+10>BUILD_HI : 1.4.1 build 3, 13:00 02.FEB.26 [aaron] 0d12efa...ca8aba8* 25.1std.0 Standard Edition
+10>
+10>stdafx.cpp
+10>CMQue.cpp
+10>CMSock.cpp
+10>DNLSock.cpp
+10>MsgQue.cpp
+10>MsgSock.cpp
+10>2DImage.cpp
+10>About.cpp
+10>boxmuller.cpp
+10>BufferDC.cpp
+10>chkBox.cpp
+10>CliView.cpp
+10>ColorBox.cpp
+10>ConView.cpp
+10>CpMemView.cpp
+10>CpView.cpp
+10>DAQView.cpp
+10>EditEx.cpp
+10>GraphSet.cpp
+10>GraphWnd.cpp
+10>HyperLink.cpp
+10>Generating Code...
+10>Compiling...
+10>ImageSet.cpp
+10>ImageWnd.cpp
+10>MFCEditEx.cpp
+10>ParmsWnd.cpp
+10>Path.cpp
+10>ProjectSet.cpp
+10>ProjectWnd.cpp
+10>app.cpp
+10>appDoc.cpp
+10>MainFrm.cpp
+10>OutputWnd.cpp
+10>LogEdit.cpp
+10>RichEx.cpp
+10>SrvView.cpp
+10>trace.cpp
+10>TreeViewEx.cpp
+10>ViewEx.cpp
+10>WndResizer.cpp
+10>Generating Code...
+10>app.vcxproj -> D:\de0_opto_fpga\win\jack\Debug\de0.exe
+10>Build Version
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\cmapi.dll -> D:\de0_opto_fpga\win\jack\Debug\cmapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\comapi.dll -> D:\de0_opto_fpga\win\jack\Debug\comapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\fifoapi.dll -> D:\de0_opto_fpga\win\jack\Debug\fifoapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\ftd2xx64.dll -> D:\de0_opto_fpga\win\jack\Debug\ftd2xx64.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\lanapi.dll -> D:\de0_opto_fpga\win\jack\Debug\lanapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\libserialport.dll -> D:\de0_opto_fpga\win\jack\Debug\libserialport.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\libspapi.dll -> D:\de0_opto_fpga\win\jack\Debug\libspapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\optoapi.dll -> D:\de0_opto_fpga\win\jack\Debug\optoapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\PEGRP64F.DLL -> D:\de0_opto_fpga\win\jack\Debug\PEGRP64F.DLL
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\uartapi.dll -> D:\de0_opto_fpga\win\jack\Debug\uartapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\udpapi.dll -> D:\de0_opto_fpga\win\jack\Debug\udpapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Debug\wpcap.dll -> D:\de0_opto_fpga\win\jack\Debug\wpcap.dll
+10>12 File(s) copied
+10>0 File(s) copied
+10>D:\de0_opto_fpga\win\jack\lib\x64\Debug\cmapi.pdb -> D:\de0_opto_fpga\win\jack\Debug\cmapi.pdb
+10>D:\de0_opto_fpga\win\jack\lib\x64\Debug\comapi.pdb -> D:\de0_opto_fpga\win\jack\Debug\comapi.pdb
+10>D:\de0_opto_fpga\win\jack\lib\x64\Debug\fifoapi.pdb -> D:\de0_opto_fpga\win\jack\Debug\fifoapi.pdb
+10>D:\de0_opto_fpga\win\jack\lib\x64\Debug\lanapi.pdb -> D:\de0_opto_fpga\win\jack\Debug\lanapi.pdb
+10>D:\de0_opto_fpga\win\jack\lib\x64\Debug\libserialport.pdb -> D:\de0_opto_fpga\win\jack\Debug\libserialport.pdb
+10>D:\de0_opto_fpga\win\jack\lib\x64\Debug\libspapi.pdb -> D:\de0_opto_fpga\win\jack\Debug\libspapi.pdb
+10>D:\de0_opto_fpga\win\jack\lib\x64\Debug\optoapi.pdb -> D:\de0_opto_fpga\win\jack\Debug\optoapi.pdb
+10>D:\de0_opto_fpga\win\jack\lib\x64\Debug\uartapi.pdb -> D:\de0_opto_fpga\win\jack\Debug\uartapi.pdb
+10>D:\de0_opto_fpga\win\jack\lib\x64\Debug\udpapi.pdb -> D:\de0_opto_fpga\win\jack\Debug\udpapi.pdb
+10>9 File(s) copied
+========== Rebuild All: 10 succeeded, 0 failed, 0 skipped ==========
+========== Rebuild completed at 1:00 PM and took 06.593 seconds ==========
+
+####
+
+
+VS2022 jack.sln Rebuild Solution Release Log:
+
+
+####
+
+
+Rebuild started at 1:06 PM...
+1>------ Rebuild All started: Project: libserialport, Configuration: Release x64 ------
+2>------ Rebuild All started: Project: cmapi, Configuration: Release x64 ------
+2>Build Version
+1>serialport.c
+2>
+2>Version Utility 1.8 [AEL]
+2>Build String:  1.0.2 build 4, 13:06 02.FEB.26 [aaron]
+2>
+2>stdafx.cpp
+1>timing.c
+2>dllmain.cpp
+1>windows.c
+2>cmapi.cpp
+1>   Creating library Release\libserialport.lib and object Release\libserialport.exp
+2>trace.cpp
+1>Generating code
+1>Previous IPDB not found, fall back to full compilation.
+2>Generating Code...
+1>All 114 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+1>Finished generating code
+1>libserialport.vcxproj -> D:\de0_opto_fpga\win\jack\libserialport\Release\libserialport.dll
+2>   Creating library Release\cmapi.lib and object Release\cmapi.exp
+1>Copy DLLs and LIBs
+1>D:\de0_opto_fpga\win\jack\libserialport\Release\libserialport.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\libserialport.dll
+1>1 File(s) copied
+1>D:\de0_opto_fpga\win\jack\libserialport\Release\libserialport.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Release\libserialport.lib
+1>1 File(s) copied
+1>D:\de0_opto_fpga\win\jack\libserialport\Release\libserialport.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Release\libserialport.exp
+1>1 File(s) copied
+1>D:\de0_opto_fpga\win\jack\libserialport\Release\libserialport.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Release\libserialport.pdb
+1>1 File(s) copied
+1>D:\de0_opto_fpga\win\jack\libserialport\libserialport.h -> D:\de0_opto_fpga\win\jack\inc\libserialport.h
+1>1 File(s) copied
+2>cmapi.vcxproj -> D:\de0_opto_fpga\win\jack\cmapi\Release\cmapi.dll
+2>Copy DLLs and LIBs
+2>D:\de0_opto_fpga\win\jack\cmapi\Release\cmapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\cmapi.dll
+2>1 File(s) copied
+2>D:\de0_opto_fpga\win\jack\cmapi\Release\cmapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Release\cmapi.lib
+2>1 File(s) copied
+2>D:\de0_opto_fpga\win\jack\cmapi\Release\cmapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Release\cmapi.exp
+2>1 File(s) copied
+2>D:\de0_opto_fpga\win\jack\cmapi\Release\cmapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Release\cmapi.pdb
+2>1 File(s) copied
+2>D:\de0_opto_fpga\win\jack\cmapi\cmapi.h -> D:\de0_opto_fpga\win\jack\inc\cmapi.h
+2>1 File(s) copied
+2>D:\de0_opto_fpga\win\jack\cmapi\msg_str.h -> D:\de0_opto_fpga\win\jack\inc\msg_str.h
+2>1 File(s) copied
+3>------ Rebuild All started: Project: libspapi, Configuration: Release x64 ------
+4>------ Rebuild All started: Project: uartapi, Configuration: Release x64 ------
+5>------ Rebuild All started: Project: udpapi, Configuration: Release x64 ------
+6>------ Rebuild All started: Project: optoapi, Configuration: Release x64 ------
+7>------ Rebuild All started: Project: fifoapi, Configuration: Release x64 ------
+8>------ Rebuild All started: Project: lanapi, Configuration: Release x64 ------
+9>------ Rebuild All started: Project: comapi, Configuration: Release x64 ------
+4>Build Version
+4>
+4>Version Utility 1.8 [AEL]
+4>Build String:  1.0.3 build 4, 13:06 02.FEB.26 [aaron]
+4>
+4>stdafx.cpp
+3>Build Version
+3>
+3>Version Utility 1.8 [AEL]
+3>Build String:  1.0.3 build 4, 13:06 02.FEB.26 [aaron]
+3>
+3>stdafx.cpp
+5>Build Version
+5>
+5>Version Utility 1.8 [AEL]
+5>Build String:  1.0.3 build 4, 13:06 02.FEB.26 [aaron]
+5>
+5>stdafx.cpp
+6>Build Version
+6>
+6>Version Utility 1.8 [AEL]
+6>Build String:  1.0.3 build 4, 13:06 02.FEB.26 [aaron]
+6>
+6>stdafx.cpp
+8>Build Version
+9>Build Version
+8>
+8>Version Utility 1.8 [AEL]
+8>Build String:  1.0.3 build 4, 13:06 02.FEB.26 [aaron]
+8>
+8>stdafx.cpp
+9>
+9>Version Utility 1.8 [AEL]
+9>Build String:  1.0.3 build 4, 13:06 02.FEB.26 [aaron]
+9>
+7>Build Version
+9>stdafx.cpp
+4>dllmain.cpp
+6>dllmain.cpp
+7>
+7>Version Utility 1.8 [AEL]
+7>Build String:  1.0.3 build 4, 13:06 02.FEB.26 [aaron]
+7>
+5>dllmain.cpp
+7>stdafx.cpp
+8>dllmain.cpp
+4>uart.cpp
+6>opto.cpp
+5>udp.cpp
+8>lan.cpp
+7>dllmain.cpp
+3>dllmain.cpp
+4>trace.cpp
+6>trace.cpp
+7>fifo.cpp
+4>Generating Code...
+9>dllmain.cpp
+6>Generating Code...
+5>trace.cpp
+8>trace.cpp
+4>   Creating library Release\uartapi.lib and object Release\uartapi.exp
+5>Generating Code...
+6>   Creating library Release\optoapi.lib and object Release\optoapi.exp
+8>Generating Code...
+5>   Creating library Release\udpapi.lib and object Release\udpapi.exp
+4>uartapi.vcxproj -> D:\de0_opto_fpga\win\jack\uartapi\Release\uartapi.dll
+6>optoapi.vcxproj -> D:\de0_opto_fpga\win\jack\optoapi\Release\optoapi.dll
+4>Copy DLLs and LIBs
+4>D:\de0_opto_fpga\win\jack\uartapi\Release\uartapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\uartapi.dll
+4>1 File(s) copied
+4>D:\de0_opto_fpga\win\jack\uartapi\Release\uartapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Release\uartapi.lib
+4>1 File(s) copied
+4>D:\de0_opto_fpga\win\jack\uartapi\Release\uartapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Release\uartapi.exp
+4>1 File(s) copied
+5>udpapi.vcxproj -> D:\de0_opto_fpga\win\jack\udpapi\Release\udpapi.dll
+6>Copy DLLs and LIBs
+6>D:\de0_opto_fpga\win\jack\optoapi\Release\optoapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\optoapi.dll
+6>1 File(s) copied
+6>D:\de0_opto_fpga\win\jack\optoapi\Release\optoapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Release\optoapi.lib
+6>1 File(s) copied
+6>D:\de0_opto_fpga\win\jack\optoapi\Release\optoapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Release\optoapi.exp
+6>1 File(s) copied
+6>D:\de0_opto_fpga\win\jack\optoapi\Release\optoapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Release\optoapi.pdb
+6>1 File(s) copied
+4>D:\de0_opto_fpga\win\jack\uartapi\Release\uartapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Release\uartapi.pdb
+4>1 File(s) copied
+4>D:\de0_opto_fpga\win\jack\uartapi\uartapi.h -> D:\de0_opto_fpga\win\jack\inc\uartapi.h
+4>1 File(s) copied
+4>D:\de0_opto_fpga\win\jack\uartapi\x64\ftd2xx64.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\ftd2xx64.dll
+4>1 File(s) copied
+6>D:\de0_opto_fpga\win\jack\optoapi\optoapi.h -> D:\de0_opto_fpga\win\jack\inc\optoapi.h
+6>1 File(s) copied
+6>D:\de0_opto_fpga\win\jack\optoapi\x64\ftd2xx64.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\ftd2xx64.dll
+6>1 File(s) copied
+5>Copy DLLs and LIBs
+5>D:\de0_opto_fpga\win\jack\udpapi\Release\udpapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\udpapi.dll
+5>1 File(s) copied
+5>D:\de0_opto_fpga\win\jack\udpapi\Release\udpapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Release\udpapi.lib
+5>1 File(s) copied
+5>D:\de0_opto_fpga\win\jack\udpapi\Release\udpapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Release\udpapi.exp
+5>1 File(s) copied
+5>D:\de0_opto_fpga\win\jack\udpapi\Release\udpapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Release\udpapi.pdb
+5>1 File(s) copied
+5>D:\de0_opto_fpga\win\jack\udpapi\udpapi.h -> D:\de0_opto_fpga\win\jack\inc\udpapi.h
+5>1 File(s) copied
+7>trace.cpp
+8>   Creating library Release\lanapi.lib and object Release\lanapi.exp
+7>Generating Code...
+8>lanapi.vcxproj -> D:\de0_opto_fpga\win\jack\lanapi\Release\lanapi.dll
+3>libsp.cpp
+7>   Creating library Release\fifoapi.lib and object Release\fifoapi.exp
+3>trace.cpp
+3>Generating Code...
+8>Copy DLLs and LIBs
+8>D:\de0_opto_fpga\win\jack\lanapi\Release\lanapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\lanapi.dll
+8>1 File(s) copied
+8>D:\de0_opto_fpga\win\jack\lanapi\Release\lanapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Release\lanapi.lib
+8>1 File(s) copied
+8>D:\de0_opto_fpga\win\jack\lanapi\Release\lanapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Release\lanapi.exp
+8>1 File(s) copied
+8>D:\de0_opto_fpga\win\jack\lanapi\Release\lanapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Release\lanapi.pdb
+8>1 File(s) copied
+7>fifoapi.vcxproj -> D:\de0_opto_fpga\win\jack\fifoapi\Release\fifoapi.dll
+8>D:\de0_opto_fpga\win\jack\lanapi\lanapi.h -> D:\de0_opto_fpga\win\jack\inc\lanapi.h
+8>1 File(s) copied
+8>D:\de0_opto_fpga\win\jack\lanapi\x64\wpcap.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\wpcap.dll
+8>1 File(s) copied
+9>com.cpp
+3>   Creating library Release\libspapi.lib and object Release\libspapi.exp
+7>Copy DLLs and LIBs
+7>D:\de0_opto_fpga\win\jack\fifoapi\Release\fifoapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\fifoapi.dll
+7>1 File(s) copied
+9>trace.cpp
+9>Generating Code...
+3>libspapi.vcxproj -> D:\de0_opto_fpga\win\jack\libspapi\Release\libspapi.dll
+3>Copy DLLs and LIBs
+7>D:\de0_opto_fpga\win\jack\fifoapi\Release\fifoapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Release\fifoapi.lib
+7>1 File(s) copied
+7>D:\de0_opto_fpga\win\jack\fifoapi\Release\fifoapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Release\fifoapi.exp
+7>1 File(s) copied
+7>D:\de0_opto_fpga\win\jack\fifoapi\Release\fifoapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Release\fifoapi.pdb
+7>1 File(s) copied
+7>D:\de0_opto_fpga\win\jack\fifoapi\fifoapi.h -> D:\de0_opto_fpga\win\jack\inc\fifoapi.h
+7>1 File(s) copied
+7>D:\de0_opto_fpga\win\jack\fifoapi\x64\ftd2xx64.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\ftd2xx64.dll
+7>1 File(s) copied
+9>   Creating library Release\comapi.lib and object Release\comapi.exp
+3>D:\de0_opto_fpga\win\jack\libspapi\Release\libspapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\libspapi.dll
+3>1 File(s) copied
+3>D:\de0_opto_fpga\win\jack\libspapi\Release\libspapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Release\libspapi.lib
+3>1 File(s) copied
+3>D:\de0_opto_fpga\win\jack\libspapi\Release\libspapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Release\libspapi.exp
+3>1 File(s) copied
+3>D:\de0_opto_fpga\win\jack\libspapi\Release\libspapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Release\libspapi.pdb
+3>1 File(s) copied
+3>D:\de0_opto_fpga\win\jack\libspapi\libspapi.h -> D:\de0_opto_fpga\win\jack\inc\libspapi.h
+3>1 File(s) copied
+9>comapi.vcxproj -> D:\de0_opto_fpga\win\jack\comapi\Release\comapi.dll
+9>Copy DLLs and LIBs
+9>D:\de0_opto_fpga\win\jack\comapi\Release\comapi.dll -> D:\de0_opto_fpga\win\jack\dll\x64\Release\comapi.dll
+9>1 File(s) copied
+9>D:\de0_opto_fpga\win\jack\comapi\Release\comapi.lib -> D:\de0_opto_fpga\win\jack\lib\x64\Release\comapi.lib
+9>1 File(s) copied
+9>D:\de0_opto_fpga\win\jack\comapi\Release\comapi.exp -> D:\de0_opto_fpga\win\jack\lib\x64\Release\comapi.exp
+9>1 File(s) copied
+9>D:\de0_opto_fpga\win\jack\comapi\Release\comapi.pdb -> D:\de0_opto_fpga\win\jack\lib\x64\Release\comapi.pdb
+9>1 File(s) copied
+9>D:\de0_opto_fpga\win\jack\comapi\comapi.h -> D:\de0_opto_fpga\win\jack\inc\comapi.h
+9>1 File(s) copied
+10>------ Rebuild All started: Project: app, Configuration: Release x64 ------
+10>Build Version
+10>
+10>Firmware Version Utility 1.12
+10>cmd : D:\de0_opto_fpga\win\jack\..\..\utils\fw_ver.exe D:\de0_opto_fpga\win\jack\app\build.inc D:\de0_opto_fpga\win\jack\app\build.h D:\de0_opto_fpga\win\jack\..\..\.git D:\de0_opto_fpga\win\jack\..\..\de0_top\PR_RF\de0_fpga.qsf
+10>cwd : D:\de0_opto_fpga\win\jack\app
+10>BUILD_HI : 1.4.1 build 5, 13:07 02.FEB.26 [aaron] 0d12efa...ca8aba8* 25.1std.0 Standard Edition
+10>
+10>stdafx.cpp
+10>CMQue.cpp
+10>CMSock.cpp
+10>DNLSock.cpp
+10>MsgQue.cpp
+10>MsgSock.cpp
+10>2DImage.cpp
+10>About.cpp
+10>boxmuller.cpp
+10>BufferDC.cpp
+10>chkBox.cpp
+10>CliView.cpp
+10>ColorBox.cpp
+10>ConView.cpp
+10>CpMemView.cpp
+10>CpView.cpp
+10>DAQView.cpp
+10>EditEx.cpp
+10>GraphSet.cpp
+10>GraphWnd.cpp
+10>HyperLink.cpp
+10>Generating Code...
+10>Compiling...
+10>ImageSet.cpp
+10>ImageWnd.cpp
+10>MFCEditEx.cpp
+10>ParmsWnd.cpp
+10>Path.cpp
+10>ProjectSet.cpp
+10>ProjectWnd.cpp
+10>app.cpp
+10>appDoc.cpp
+10>MainFrm.cpp
+10>OutputWnd.cpp
+10>LogEdit.cpp
+10>RichEx.cpp
+10>SrvView.cpp
+10>trace.cpp
+10>TreeViewEx.cpp
+10>ViewEx.cpp
+10>Generating Code...
+10>WndResizer.cpp
+10>app.vcxproj -> D:\de0_opto_fpga\win\jack\Release\de0.exe
+10>Build Version
+10>Could Not Find D:\de0_opto_fpga\win\jack\Release\*.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\cmapi.dll -> D:\de0_opto_fpga\win\jack\Release\cmapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\comapi.dll -> D:\de0_opto_fpga\win\jack\Release\comapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\fifoapi.dll -> D:\de0_opto_fpga\win\jack\Release\fifoapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\ftd2xx64.dll -> D:\de0_opto_fpga\win\jack\Release\ftd2xx64.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\lanapi.dll -> D:\de0_opto_fpga\win\jack\Release\lanapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\libserialport.dll -> D:\de0_opto_fpga\win\jack\Release\libserialport.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\libspapi.dll -> D:\de0_opto_fpga\win\jack\Release\libspapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\optoapi.dll -> D:\de0_opto_fpga\win\jack\Release\optoapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\PEGRP64F.DLL -> D:\de0_opto_fpga\win\jack\Release\PEGRP64F.DLL
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\uartapi.dll -> D:\de0_opto_fpga\win\jack\Release\uartapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\udpapi.dll -> D:\de0_opto_fpga\win\jack\Release\udpapi.dll
+10>D:\de0_opto_fpga\win\jack\dll\x64\Release\wpcap.dll -> D:\de0_opto_fpga\win\jack\Release\wpcap.dll
+10>12 File(s) copied
+10>0 File(s) copied
+10>File not found - *.dll
+10>0 File(s) copied
+10>Processing config: C:\Program Files\NSIS\nsisconf.nsh
+10>Processing script file: "install_x64.nsi" (ACP)
+10>
+10>Processed 1 file, writing output (x86-unicode):
+10>
+10>Output: "D:\de0_opto_fpga\win\jack\Install\DE0-1.4.1-x64-setup.exe"
+10>Install: 3 pages (192 bytes), 13 sections (2 required) (26936 bytes), 196 instructions (5488 bytes), 195 strings (6610 bytes), 1 language table (302 bytes).
+10>Uninstall: 2 pages (192 bytes), 1 section (2072 bytes), 89 instructions (2492 bytes), 112 strings (3488 bytes), 1 language table (254 bytes).
+10>
+10>Using lzma (compress whole) compression.
+10>
+10>EXE header size:              337920 / 38912 bytes
+10>Install code:                          (39992 bytes)
+10>Install data:                          (39329796 bytes)
+10>Uninstall code+data:                   (343720 bytes)
+10>Compressed data:            27712311 / 39713508 bytes
+10>CRC (0xE03A10AD):                  4 / 4 bytes
+10>
+10>Total size:                 28050235 / 39752424 bytes (70.5%)
+========== Rebuild All: 10 succeeded, 0 failed, 0 skipped ==========
+========== Rebuild completed at 1:07 PM and took 18.378 seconds ==========
+
+
+####

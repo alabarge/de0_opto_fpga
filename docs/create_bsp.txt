@@ -1,3 +1,5 @@
+These instructions are only for creating a BSP adn APP from scratch.
+
 1.    From the niosv-shell.exe (c:\altera\25.1std\niosv\bin) run niosv-bsp-editor.exe
 2.    File->New BSP, opening and editing an existing BSP doesn't seem to work!
 3.    Select the de0_fpga.sopcinfo file at de0_top\PR_RF\, this file

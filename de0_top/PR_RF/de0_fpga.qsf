@@ -810,6 +810,8 @@ set_global_assignment -name QIP_FILE de0_fpga/synthesis/de0_fpga.qip
 set_global_assignment -name SOURCE_FILE de0_fpga.qsf
 set_global_assignment -name SDC_FILE de0_fpga.sdc
 set_global_assignment -name VHDL_FILE de0_top.vhd
+set_global_assignment -name CDF_FILE de0_fpga.cdf
+
 set_global_assignment -name PROJECT_IP_REGENERATION_POLICY SKIP_REGENERATING_IP_IF_HDL_MODIFIED
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"

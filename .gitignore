@@ -39,9 +39,6 @@
 *.idb
 *.pdb
 
-# BSP Settings files
-*.bsp
-
 # Kernel Module Compile Results
 *.mod*
 *.cmd
